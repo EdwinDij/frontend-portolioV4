@@ -3,7 +3,7 @@ import { Notyf } from 'notyf'
 import 'notyf/notyf.min.css'
 
 
-const copyOnClick = () => {
+const copyOnClick = (): void => {
 
     const notyf = new Notyf({
         duration: 0,
@@ -22,9 +22,9 @@ const copyOnClick = () => {
 }
 
 
-export default function about() {
+export default function About() {
     return (
-        <div className="mt-20">
+        <div className="sm:mt-20">
             <h1 className="mb-10 text-2xl">À propos de moi</h1>
 
             <p className="text-xl">Bonjour et bienvenue sur mon portfolio !
@@ -37,7 +37,7 @@ export default function about() {
             <div className='mt-10 flex flex-col items-end max-sm:items-center mr-4'>
                 <div onClick={copyOnClick} className='flex  flex-col items-center bg-grey bg-opacity-50 py-2 px-3 rounded cursor-pointer hover:bg-slate-800 hover:text-white ease-in duration-300 '>
                     <p><BsEnvelopeAt className='text-3xl text-center' /></p>
-                    <p className='text-xl'>edwin.d899@gmail.com</p>
+                    <p className='text-xl max-sm:text-sm'>edwin.d899@gmail.com</p>
                 </div>
 
             </div>

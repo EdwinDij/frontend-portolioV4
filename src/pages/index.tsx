@@ -1,5 +1,6 @@
 import { BsEnvelopeAt } from 'react-icons/bs'
 import About from './about'
+import Project from './project'
 export default function Home() {
   return (
     <main>
@@ -39,9 +40,12 @@ export default function Home() {
           </div>
         </div>
       </section >
-      <section id="About-me" className="h-screen flex max-2xl:ml-9 max-[2560px]:ml-9 max-md:justify-center">
+      <section id="About-me" className="h-screen flex max-2xl:ml-5 max-[2560px]:ml-5 max-md:justify-center items-center">
         <About />
       </section>
+      <section id="Projects" className="h-screen max-2xl:ml-5 max-[2560px]:ml-5 ">
+        <Project />
+        </section>
     </main>
   )
 }
