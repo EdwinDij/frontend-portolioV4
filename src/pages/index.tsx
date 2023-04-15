@@ -45,10 +45,10 @@ export default function Home() {
       <section id="About-me" className="h-screen flex max-2xl:ml-5 max-[2560px]:ml-5 max-md:justify-center items-center">
         <About />
       </section>
-      <section id="Projects" className="max-2xl:ml-5 max-[2560px]:ml-5 ">
+      <section id="Projects" className="max-2xl:ml-5 max-[2560px]:ml-5 h-screen">
         <Project />
         </section>
-        <section id="Contact" className="flex flex-col max-2xl:ml-5 max-[2560px]:ml-5 max-md:justify-center items-center">
+        <section id="Contact" className="flex flex-col max-2xl:ml-5 max-[2560px]:ml-5 max-md:justify-center items-center mt-16">
           <Contact />
           </section>
     </main>

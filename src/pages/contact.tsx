@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import axios from 'axios'
 import { Notyf } from 'notyf'
+import {BsGithub} from 'react-icons/bs'
 
 export default function Contact() {
 
@@ -56,16 +57,16 @@ export default function Contact() {
 
     return (
         <div>
-            <h1 className='text-2xl mb-10'>Contact</h1>
-            <div className=' flex'>
-                <div>
-                    <h2 >Me contacter</h2>
-                    <p>
+            <h1 className='text-2xl mb-10 '>Contact</h1>
+            <div className='flex max-sm:flex-col sm:gap-16 items-center'>
+                <div className='flex flex-col justify-center border-dark border-2 px-10 h-full '>
+                    <h2 className='text-2xl mb-12' >Me contacter</h2>
+                    <p className='mb-6'>
                         Je me ferai un plaisir de répondre à vos questions et de discuter de vos projets.<br></br>
                         Vous pouvez me contacter par email.
                     </p>
                     <p>edwin.d899@gmail.com</p>
-                    <a href='#'>Site web</a>
+                    <a href='https://github.com/EdwinDij' target="_blank" className='flex items-baseline' ><BsGithub/>Github</a>
                 </div>
                 <div>
                     <form onSubmit={handleSubmit} className="p-6">
@@ -104,7 +105,7 @@ export default function Contact() {
                                 id="message"
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
-                                className="block w-full mt-1 rounded-sm border-red border-opacity-50 border-2 outline-none resize-none"
+                                className="block w-full mt-1 rounded-sm border-red border-opacity-50 border-2 outline-none resize-none h-48 "
                             ></textarea>
                         </div>
                         <div className="mt-6">
