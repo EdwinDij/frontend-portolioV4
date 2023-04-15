@@ -59,7 +59,7 @@ export default function Contact() {
         <div>
             <h1 className="mb-10 text-2xl relative before:block before:w-1 pl-2 before:bg-red before:content-'' before:absolute before:inset-y-0 before:left-0">Contact</h1>
             <div className='flex max-sm:flex-col sm:gap-16 items-center'>
-                <div className='flex flex-col justify-center border-dark border-2 px-10 h-full '>
+                <div className='flex flex-col justify-center border-dark border-2 px-10 py-4 h-full '>
                     <h2 className='text-2xl mb-12' >Me contacter</h2>
                     <p className='mb-6'>
                         Je me ferai un plaisir de répondre à vos questions et de discuter de vos projets.<br></br>
@@ -69,9 +69,9 @@ export default function Contact() {
                     <a href='https://github.com/EdwinDij' target="_blank" className='flex items-baseline' ><BsGithub/>Github</a>
                 </div>
                 <div>
-                    <form onSubmit={handleSubmit} className="p-6">
+                    <form onSubmit={handleSubmit} className="p-6 text-black">
                         <div className='w-60'>
-                            <label htmlFor="name" className="text-gray-700">
+                            <label htmlFor="name" className="text-white">
                                 Nom
                             </label>
                             <input
@@ -80,11 +80,11 @@ export default function Contact() {
                                 id="name"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
-                                className="block w-full mt-1 rounded-sm border-red border-opacity-50 border-2 outline-none"
+                                className="block w-full mt-1 rounded-sm border-red border-opacity-50 border-2 outline-none "
                             />
                         </div>
                         <div className="mt-4">
-                            <label htmlFor="email" className="text-gray-700">
+                            <label htmlFor="email" className="text-white">
                                 Email
                             </label>
                             <input
@@ -97,7 +97,7 @@ export default function Contact() {
                             />
                         </div>
                         <div className="mt-4">
-                            <label htmlFor="message" className="text-gray-700">
+                            <label htmlFor="message" className="text-white">
                                 Message
                             </label>
                             <textarea

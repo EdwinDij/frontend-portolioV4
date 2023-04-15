@@ -15,9 +15,7 @@ module.exports = {
         red: '#D62C40',
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        pc: "url('./public/top-view-workspace-with-sheet-paper-laptop.jpg')",
       },
     },
   },

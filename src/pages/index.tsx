@@ -2,12 +2,12 @@ import { BsEnvelopeAt } from 'react-icons/bs'
 import About from './about'
 import Project from './project'
 import Contact from './contact'
-import {BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs'
+import { BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs'
 
 export default function Home() {
   return (
-    <main>
-      <nav className="pt-3">
+    <main className='bg-lightgrey text-white'>
+      <nav className="pt-3 text-xl">
         <div className="flex justify-around">
           <div className="initial">
             <h1 className="name">ED</h1>
@@ -19,7 +19,7 @@ export default function Home() {
           </div>
         </div>
       </nav>
-      <section className="h-screen flex items-center max-2xl:ml-5 max-[2560px]:ml-5 max-md:justify-center">
+      <section className="h-screen flex items-center max-2xl:ml-5 max-[2560px]:ml-5 max-sm:ml-0 max-md:justify-center">
         <div>
           <h2 className='text-2xl'>Salut, je suis <span className="text-red font-bold">Edwin Dijeont</span>,</h2>
           <p className='text-4xl'>Dévelppeur web
@@ -30,23 +30,30 @@ export default function Home() {
             Backend
           </p>
 
-          <div className='flex justify-between text-center content-center mt-10'>
+          <div className='flex justify-between text-center content-center mt-10 max-sm:text-sm'>
+            <a href="https://www.malt.fr/profile/edwindijeont" target="_blank" rel="noreferrer">
             <div className='border-2 border-black max-sm:px-6 max-sm:py-4 px-8 py-6 mr-2 flex items-center hover:border-red cursor-pointer'>
               <h3>M{"'"}engagez</h3>
             </div>
-            <div className='border-2 border-black max-sm:px-6 max-sm:py-4 px-8 py-6 mr-2 flex items-center hover:border-red cursor-pointer hover:bordeer'>
-              <h3>Portfolio</h3>
-            </div>
-            <div className='border-2 border-black max-sm:px-6 max-sm:py-4 px-8 py-6 flex items-center hover:border-red cursor-pointer'>
-              <h3><BsEnvelopeAt /></h3>
-            </div>
+            </a>
+            <a href="#Projects">
+              <div className='border-2 border-black max-sm:px-6 max-sm:py-4 px-8 py-6 mr-2 flex items-center hover:border-red cursor-pointer'>
+                <h3>Portfolio</h3>
+              </div>
+            </a>
+            <a className='border-2 border-black max-sm:px-6 max-sm:py-4 px-8 py-6 flex items-center hover:border-red cursor-pointer' href='#Contact'>
+              <div >
+                <h3><BsEnvelopeAt /></h3>
+              </div>
+            </a>
+          
           </div>
         </div>
       </section >
       <section id="About-me" className="h-screen flex max-2xl:ml-5 max-[2560px]:ml-5 max-md:justify-center items-center">
         <About />
       </section>
-      <section id="Projects" className="max-2xl:ml-5 max-[2560px]:ml-5 max-sm:mt-6">
+      <section id="Projects" className="max-2xl:ml-5 max-[2560px]:ml-5 max-sm:ml-0 max-sm:mt-6">
         <Project />
       </section>
       <section id="Contact" className="flex flex-col max-2xl:ml-5 max-[2560px]:ml-5 max-md:justify-center items-center mt-16">
@@ -54,11 +61,11 @@ export default function Home() {
       </section>
       <footer className="flex justify-center items-center h-16 bg-dark text-white">
         <div>
-          
+
         </div>
-        <a href='https://linkedin.com/in/edwin-dijeont-1469a0226' target='_blank' className='mx-2'><BsLinkedin /></a>
-        <a href='https://github.com/EdwinDij' target='_blank' className='mx-2'><BsGithub /></a>
-        <a href='https://twitter.com/Edwindijeont' target='_blank' className='mx-2'><BsTwitter /></a>
+        <a href='https://linkedin.com/in/edwin-dijeont-1469a0226' target='_blank' rel='noreferrer' className='mx-2'><BsLinkedin /></a>
+        <a href='https://github.com/EdwinDij' target='_blank' rel='noreferrer' className='mx-2'><BsGithub /></a>
+        <a href='https://twitter.com/Edwindijeont' target='_blank' rel='noreferrer' className='mx-2'><BsTwitter /></a>
         <p className='text-xs'>© 2023 Edwin Dijeont</p>
       </footer>
     </main>
