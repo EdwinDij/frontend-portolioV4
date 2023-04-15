@@ -2,6 +2,7 @@ import { BsEnvelopeAt } from 'react-icons/bs'
 import About from './about'
 import Project from './project'
 import Contact from './contact'
+import {BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs'
 
 export default function Home() {
   return (
@@ -45,12 +46,21 @@ export default function Home() {
       <section id="About-me" className="h-screen flex max-2xl:ml-5 max-[2560px]:ml-5 max-md:justify-center items-center">
         <About />
       </section>
-      <section id="Projects" className="max-2xl:ml-5 max-[2560px]:ml-5 h-screen">
+      <section id="Projects" className="max-2xl:ml-5 max-[2560px]:ml-5 max-sm:mt-6">
         <Project />
-        </section>
-        <section id="Contact" className="flex flex-col max-2xl:ml-5 max-[2560px]:ml-5 max-md:justify-center items-center mt-16">
-          <Contact />
-          </section>
+      </section>
+      <section id="Contact" className="flex flex-col max-2xl:ml-5 max-[2560px]:ml-5 max-md:justify-center items-center mt-16">
+        <Contact />
+      </section>
+      <footer className="flex justify-center items-center h-16 bg-dark text-white">
+        <div>
+          
+        </div>
+        <a href='https://linkedin.com/in/edwin-dijeont-1469a0226' target='_blank' className='mx-2'><BsLinkedin /></a>
+        <a href='https://github.com/EdwinDij' target='_blank' className='mx-2'><BsGithub /></a>
+        <a href='https://twitter.com/Edwindijeont' target='_blank' className='mx-2'><BsTwitter /></a>
+        <p className='text-xs'>© 2023 Edwin Dijeont</p>
+      </footer>
     </main>
   )
 }

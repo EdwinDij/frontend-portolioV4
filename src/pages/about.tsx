@@ -25,7 +25,7 @@ const copyOnClick = (): void => {
 export default function About() {
     return (
         <div className="sm:mt-20">
-            <h1 className="mb-10 text-2xl">À propos de moi</h1>
+            <h1 className="mb-10 text-2xl relative before:block before:w-1 pl-2 before:bg-red before:content-'' before:absolute before:inset-y-0 before:left-0">À propos de moi</h1>
 
             <p className="text-xl">Bonjour et bienvenue sur mon portfolio !
                 <br></br>

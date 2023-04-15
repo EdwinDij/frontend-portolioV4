@@ -57,7 +57,7 @@ export default function Contact() {
 
     return (
         <div>
-            <h1 className='text-2xl mb-10 '>Contact</h1>
+            <h1 className="mb-10 text-2xl relative before:block before:w-1 pl-2 before:bg-red before:content-'' before:absolute before:inset-y-0 before:left-0">Contact</h1>
             <div className='flex max-sm:flex-col sm:gap-16 items-center'>
                 <div className='flex flex-col justify-center border-dark border-2 px-10 h-full '>
                     <h2 className='text-2xl mb-12' >Me contacter</h2>
@@ -70,7 +70,7 @@ export default function Contact() {
                 </div>
                 <div>
                     <form onSubmit={handleSubmit} className="p-6">
-                        <div>
+                        <div className='w-60'>
                             <label htmlFor="name" className="text-gray-700">
                                 Nom
                             </label>
