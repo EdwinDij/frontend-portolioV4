@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import imgApi from '../../public/os07KDw7Z.avif'
+import imgApi from '../../public/what-is-an-api-for-featured.png'
 import Image from 'next/image'
 
 type Project = {
@@ -57,7 +57,7 @@ export default function Project() {
                             <a href={project.url_github} target='_blank' rel='noreferrer' key={project.id}>
                             <div className='relative shadow-lg rounded hover:scale-105 transition-all ease-in duration-100' >
                                 {imgName ? (<img src={`${Url}/${imgName}`} width={300} height={200} alt={project.name} className=' rounded sm:h-48 sm:w-60'/>
-                                            ) : <Image src={imgApi} width={300} height={200} alt={project.name} className=' rounded sm:h-48 sm:w-60 object-cover'/>}
+                                            ) : <Image src={imgApi} width={300} height={200} alt={project.name} className=' rounded sm:h-48 sm:w-60 object-fill'/>}
                                 <h3>{project.name}</h3>
                                 <span className='absolute top-1 right-4 bg-red rounded px-2 animate-pulse bg-opacity-50 text-sm'>{project.techno[0]}</span>
                             </div>

@@ -5,10 +5,11 @@ import Contact from './contact'
 import Image from 'next/image'
 import { BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs'
 import me from '../../public/Mun_Technical_black_guy_coding_designing_illustation_8k_flat_si_9f8454d4-6cd5-4189-bfe2-45e4fe1125f9-removebg-preview.png'
-import mainBg from '../../public/Bloodfen_Origami_Illustration_pattern_Adaptive_UI_system_in_spa_1b2cfb19-1814-4a98-9937-a04ed04de846.png'
+import Head from 'next/head'
 
 export default function Home() {
   return (
+  
     <main className='text-white'>
       <nav className="pt-3 text-xl sm:mt-6">
         <div className="flex justify-around">
