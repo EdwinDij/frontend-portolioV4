@@ -7,6 +7,7 @@ export default function Document() {
       <meta name="description" content="Découvrez le portfolio d'Edwin Dijeont, un développeur web passionné de Javascript et Python. Parcourez ses projets et
        réalisations pour apprécier son expertise en création d'applications web modernes et performantes." />
        <meta name="robots" content="index,follow"></meta>
+       <link rel="favicon" href="/favicon.ico" />
       <Head />
       <body>
         <Main />
