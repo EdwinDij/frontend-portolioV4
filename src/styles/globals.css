@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-image: url("../../public/Bloodfen_Origami_Illustration_pattern_Adaptive_UI_system_in_spa_1b2cfb19-1814-4a98-9937-a04ed04de846.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+html {
+    scroll-behavior: smooth;
+}

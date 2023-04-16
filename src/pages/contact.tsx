@@ -111,7 +111,7 @@ export default function Contact() {
                         <div className="mt-6">
                             <button
                                 type="submit"
-                                className="bg-grey text-white py-2 px-4 rounded-md hover:bg-lightgrey"
+                                className="bg-grey text-white py-2 px-4 rounded-md hover:bg-lightgrey hover:scale-105 transition duration-300 ease-in-out"
                             >
                                 Envoyer
                             </button>

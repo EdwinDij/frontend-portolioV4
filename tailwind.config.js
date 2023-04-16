@@ -14,9 +14,7 @@ module.exports = {
         white: '#F5F5F5',
         red: '#D62C40',
       },
-      backgroundImage: {
-        pc: "url('./public/top-view-workspace-with-sheet-paper-laptop.jpg')",
-      },
+      backgroundImage: "url('../public/Bloodfen_Origami_Illustration_pattern_Adaptive_UI_system_in_spa_1b2cfb19-1814-4a98-9937-a04ed04de846.png')"
     },
   },
   plugins: [],
