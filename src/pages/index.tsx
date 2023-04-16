@@ -5,7 +5,6 @@ import Contact from './contact'
 import Image from 'next/image'
 import { BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs'
 import me from '../../public/Mun_Technical_black_guy_coding_designing_illustation_8k_flat_si_9f8454d4-6cd5-4189-bfe2-45e4fe1125f9-removebg-preview.png'
-import Head from 'next/head'
 
 export default function Home() {
   return (

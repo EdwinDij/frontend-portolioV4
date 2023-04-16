@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import imgApi from '../../public/what-is-an-api-for-featured.png'
