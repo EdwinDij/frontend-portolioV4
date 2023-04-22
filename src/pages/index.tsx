@@ -26,7 +26,7 @@ export default function Home() {
         <div className='flex gap-24 max-lg:flex-col'>
         <div>
           <h2 className='text-2xl'>Salut, je suis <span className="text-red font-bold">Edwin Dijeont</span>,</h2>
-          <p className='text-4xl'>Dévelppeur web
+          <p className='text-4xl'>Développeur web
             <br></br>
             Fullstack,
             Frontend
